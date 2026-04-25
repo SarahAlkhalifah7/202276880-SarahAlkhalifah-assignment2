@@ -69,7 +69,11 @@ This version extends previous assignments by adding API integration, complex log
    - Fetches weather data from the Open-Meteo API
    - Displays temperature and wind speed
    - Automatically loads on page start
-
+   
+9. **Fun Fact Feature (Interactive API)**
+   - Fetches a random fact from a public API when the user clicks a button
+   - Displays loading and error messages
+   - Enhances interactivity and user engagement
 ---
 
 ## Animations and Transitions

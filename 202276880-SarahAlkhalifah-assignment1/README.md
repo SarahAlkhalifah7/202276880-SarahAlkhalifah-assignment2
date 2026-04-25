@@ -1,5 +1,5 @@
-# 202276880-SarahAlkhalifah-assignment3
-# Assignment 3 – Advanced Functionality
+# 202276880-SarahAlkhalifah-assignment4  
+## Assignment 4 – Final Personal Portfolio
 
 This project is an advanced version of my personal portfolio website built using HTML, CSS, and JavaScript.  
 It builds on previous assignments by adding API integration, complex logic, state management, and improved user interaction.
@@ -19,6 +19,7 @@ It builds on previous assignments by adding API integration, complex logic, stat
 - Contact form validation (front-end only)
 - Hover effects and fade-in animations
 - User feedback messages (loading, success, error states)
+- Interactive Fun Fact feature (external API)
 
 ---
 
@@ -29,6 +30,7 @@ It builds on previous assignments by adding API integration, complex logic, stat
 - `assets/images/` (images)
 - `docs/ai-usage-report.md` (AI usage)
 - `docs/technical-documentation.md` (technical details)
+- `demo-video.mp4`
 
 ---
 
@@ -53,3 +55,9 @@ python -m http.server 8000
 Then open:
 
 http://localhost:8000
+
+## Live Deployment
+
+# This project is deployed using GitHub Pages:
+
+https://SarahAlkhalifah7.github.io/202276880-sarahalkhalifah-assignment4/
