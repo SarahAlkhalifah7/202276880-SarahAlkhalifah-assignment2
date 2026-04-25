@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarah Alkhalifah | Portfolio</title>
+    <meta name="description" content="Sarah Alkhalifah's personal portfolio website." />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#home">Sarah Alkhalifah</a>
+
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+
+        <div class="nav__links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#quote">Quote</a>
+          <a href="#contact">Contact</a>
+          <button class="btn btn--ghost" id="themeToggle" type="button" aria-pressed="false">
+            🌙 Theme
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="container hero__grid">
+          <div>
+            <p class="badge" id="greeting">Hello!</p>
+            <h1 class="hero__title">
+              I’m <span class="accent">Sarah Alkhalifah</span>, a Software Engineering student.
+            </h1>
+            <p class="hero__subtitle">
+              I enjoy building practical systems, working with data, and creating clean web applications.
+            </p>
+            <div class="hero__actions">
+              <a class="btn" href="#projects">View Projects</a>
+              <a class="btn btn--ghost" href="#contact">Contact Me</a>
+            </div>
+          </div>
+          <div class="right-cards">
+  <div class="card weather-card">
+    <h3>Weather</h3>
+    <p id="weatherStatus" class="muted">Loading...</p>
+
+    <div class="weather-result">
+      <p id="weatherCity">-</p>
+      <p id="weatherTemp">-</p>
+      <p id="weatherWind">-</p>
+    </div>
+  </div>
+
+  <div class="card fun-card">
+    <h3>Fun Fact 🎉</h3>
+    <p id="factText">Click the button to see a fun fact!</p>
+    <button class="btn" id="factBtn" type="button">Get Fun Fact</button>
+  </div>
+</div>
+          
+
+          <div class="hero__card">
+            
+            <ul class="hero__facts">
+              <li><strong>Focus:</strong> SQL • C • Java • Python</li>
+              <li><strong>Interests:</strong> Systems, data, and design</li>
+              <li><strong>Goal:</strong> Grow a strong portfolio</li>
+            </ul>
+          </div>
+          
+        </div>
+        
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <p class="lead">
+            I’m Sarah Alkhalifah, a Software Engineering student who enjoys building reliable, well-structured
+            applications. I like working on project that solve real world problems 
+          </p>
+
+          <div class="about__grid">
+            <div class="card">
+              <h3>Skills</h3>
+              <ul class="list">
+                <li>SQL & relational database design</li>
+                <li>C programming & algorithmic problem solving</li>
+                <li>Java (OOP, basic data structures)</li>
+                <li>Git & GitHub workflow</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Strengths</h3>
+              <ul class="list">
+                <li>Breaking problems into clear steps</li>
+                <li>Writing readable, consistent code</li>
+                <li>Testing and fixing edge cases</li>
+                <li>Learning quickly and improving iteratively</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Next Goals</h3>
+              <p>
+                I’m expanding this portfolio with stronger UI, better documentation, and more real projects. I also want
+                to add live demos and GitHub links as I polish each project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- PROJECTS -->
+      
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section__header">
+            
+            <h2>Projects</h2>
+            <p class="muted">A few projects I’ve worked on during my Software Engineering studies.</p>
+            
+          </div>
+          <select id="sortProjects" class="sort-select">
+            <option value="default">Sort Projects</option>
+            <option value="az">A–Z</option>
+            <option value="sql">SQL First</option>
+            <option value="c">C First</option>
+            <option value="java">Java First</option>
+          </select>
+          <div class="projects__grid">
+            <article class="card project" data-language="sql">
+              
+              <div class="project__body">
+                <h3>University Campus Events Database</h3>
+                <p>
+                  A relational database that models how a university schedules, organizes, approves, and manages campus
+                  events. I designed tables and relationships and wrote queries to support event workflows.
+                </p>
+                <div class="project__tags">
+                  <span class="tag">SQL</span>
+                  <span class="tag">Database</span>
+                  <span class="tag">ERD</span>
+                </div>
+                
+              </div>
+            </article>
+
+            <article class="card project" data-language="c">
+              
+              <div class="project__body">
+                <h3>Campus Navigation: Fastest Routes</h3>
+                <p>
+                  A C program that finds the fastest routes across campus using graph-based logic. Focused on efficiency,
+                  input validation, and clear output formatting.
+                </p>
+                <div class="project__tags">
+                  <span class="tag">C</span>
+                  <span class="tag">Graphs</span>
+                  <span class="tag">Algorithms</span>
+                </div>
+                
+              </div>
+            </article>
+
+            <article class="card project" data-language="java">
+              
+              <div class="project__body">
+                <h3>Student Information Library</h3>
+                <p>
+                  A Java application for managing student records with features like adding, searching, and deleting
+                  students. Built to practice OOP design and clean data handling.
+                </p>
+                <div class="project__tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">OOP</span>
+                  <span class="tag">CRUD</span>
+                </div>
+               
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- API SECTION -->
+<section class="section" id="quote">
+  <div class="container">
+    <h2>Programming Joke</h2>
+    <p class="muted">Click the button to load a programming joke from a public API.</p>
+
+    <div class="card quote-box">
+      <button id="loadQuoteBtn" class="btn">Get Quote</button>
+      <p id="quoteStatus" class="muted"></p>
+      <blockquote id="quoteText">No joke loaded yet.</blockquote>
+      <p id="quoteAuthor" class="muted"></p>
+    </div>
+  </div>
+</section> 
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="muted">Send a message (no backend—this form validates input only).</p>
+
+          <div class="contact__grid">
+            <form class="card form" id="contactForm" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required minlength="2" />
+                <small class="error" id="nameError"></small>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                <small class="error" id="emailError"></small>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Write your message..."
+                  required
+                  minlength="10"
+                ></textarea>
+                <small class="error" id="messageError"></small>
+              </div>
+
+              <button class="btn" type="submit">Send</button>
+              <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="card">
+              <h3>Other ways to reach me</h3>
+              <ul class="list">
+                <li><strong>Email:</strong> s202276880@kfupm.edu.sa</li>
+                <li><strong>GitHub:</strong> SarahAlkhalifah7</li>
+                
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__row">
+        <p>© <span id="year"></span> Sarah Alkhalifah. All rights reserved.</p>
+        <a class="link" href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
